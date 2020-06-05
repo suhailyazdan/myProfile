@@ -1,0 +1,166 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+.carousel {
+  margin-top: 56px;
+}
+
+@include media-breakpoint-up(sm) {
+  .carousel {
+    margin-top: 55px;
+  }
+}
+
+.linkBtn {
+  display: block;
+  padding: 3px 10px 6px;
+  background-color: #eeeeee;
+  border: 1px solid #2581c4;
+  border-radius: 20px;
+  width: 90%;
+  text-align: center;
+  margin: 5px 20px;
+}
+
+@include media-breakpoint-up(sm) {
+  .linkBtn {
+    display: block;
+    padding: 3px 10px 6px;
+    background-color: #eeeeee;
+    border: 1px solid #2581c4;
+    border-radius: 20px;
+    width: 90%;
+    text-align: center;
+    margin: 5px 20px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .linkBtn {
+    display: block;
+    padding: 3px 10px 6px;
+    background-color: #eeeeee;
+    border: 1px solid #2581c4;
+    border-radius: 20px;
+    width: 100px;
+    text-align: center;
+    margin: 5px 20px;
+  }
+}
+
+.icon-wrapper {
+  border: 1px solid #2581c4;
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  display: block;
+  text-align: center;
+  padding-top: 18px;
+  margin: auto;
+}
+
+.linkBtn:hover {
+  background-color: #dfdfdf;
+}
+
+.bg-blue {
+  background-color: #e3feff;
+}
+
+.border-blue-top {
+  border-top: 1px solid #6ab3e7;
+}
+
+.bg-blue-lightest-more {
+  background-color: #c1e5ff;
+}
+
+.bg-blue-lightest {
+  background-color: #6ab3e7;
+}
+
+.bg-blue-light {
+  background-color: #2581c4;
+}
+
+.bg-blue-dark {
+  background-color: #2060a7;
+}
+
+.bg-grey-lightest-more {
+  background-color: #f7f7f7;
+}
+
+.bg-grey-lightest {
+  background-color: #ebebeb;
+}
+
+.border-grey-top {
+  border-top: 1px solid #a5a5a5;
+}
+
+.bg-grey-light {
+  background-color: #e3e1e1;
+}
+
+.bg-grey-dark {
+  background-color: #a5a5a5;
+}
+
+.font-blue-lightest {
+  color: #6ab3e7;
+}
+
+.font-blue-light {
+  color: #2581c4;
+}
+
+.font-blue-dark {
+  color: #2060a7;
+}
+
+.font-grey-lightest {
+  color: #ebebeb;
+}
+
+.font-grey-light {
+  color: #d1d1d1;
+}
+
+.bg-grey-dark {
+  color: #a5a5a5;
+}
+
+/*---content---*/
+
+.contentBox {
+  background-color: #2581c4;
+  padding: 3px 0;
+  border-radius: 5px;
+  .innerBox {
+    background-color: #f7f7f7;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+}
+
+.contentBox02 {
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+
+.footer-text {
+  font-size: 0.8em;
+}
+
+.skillBox {
+  padding: 3px 20px 6px;
+  background-color: #f7f7f7;
+  border: 1px solid #2581c4;
+  border-radius: 20px;
+  margin: 5px 20px;
+  text-align: center;
+}

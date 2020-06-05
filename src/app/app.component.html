@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+  <a class="navbar-brand" href="#">myBio</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" (click)="isCollapsed = !isCollapsed"
+    data-target="#navbarNav" aria-controls="navbarNav" [attr.aria-expanded]="!isCollapsed"
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav" [ngbCollapse]="isCollapsed">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link linkBtn" routerLink="/home" routerLinkActive="active">
+          Home
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link linkBtn" routerLink="/about" routerLinkActive="active">About</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="carousel">
+  <ngb-carousel *ngIf="images">
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="images[0]" alt="Random first slide" class="w-100">
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="images[1]" alt="Random second slide" class="w-100">
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="images[2]" alt="Random third slide" class="w-100">
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>
+
+<router-outlet></router-outlet>
+
+<div class="container-fluid">
+  <div class="row no-gutter bg-grey-lightest border-grey-top mt-3">
+    <div class="col-12 my-4">
+      <p class="text-center text-md-right footer-text">
+        Suhail Yazdan, Ui Ux Designer, Berlie Street, Langford town (Near Richmond), Bangalore-560025<br>
+        Mobile : 7411555859, E-mail: yazdan.suhail@gmail.com
+      </p>
+    </div>
+  </div>
+</div>
